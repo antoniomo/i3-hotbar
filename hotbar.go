@@ -5,13 +5,9 @@ package main
 import "C"
 
 import (
+	"flag"
 	"os/exec"
 	"time"
-)
-
-const (
-	refreshPeriod = 500 * time.Millisecond
-	barHeight     = 30 // Bar height in pixels
 )
 
 var (
@@ -21,23 +17,27 @@ var (
 )
 
 func main() {
+	refreshPeriod := flag.Duration("refreshPeriod", 500*time.Millisecond, "Refresh period")
+	barHeight := flag.Int("barHeight", 30, "Bar height in pixels")
+	flag.Parse()
+
 	barHidden := true
 	for {
-		if barHidden && cursorInBar() {
+		if barHidden && cursorInBar(*barHeight) {
 			barHidden = false
 			showBar()
-		} else if !barHidden && !cursorInBar() {
+		} else if !barHidden && !cursorInBar(*barHeight) {
 			barHidden = true
 			hideBar()
 		}
-		time.Sleep(refreshPeriod)
+		time.Sleep(*refreshPeriod)
 	}
 }
 
-func cursorInBar() bool {
+func cursorInBar(barHeight int) bool {
 	C.xdo_get_mouse_location2(xdo, nil, &y, &s, nil)
 	C.xdo_get_viewport_dimensions(xdo, &width, &height, s)
-	if y > C.int(height-barHeight) {
+	if y > C.int(height)-C.int(barHeight) {
 		return true
 	}
 	return false
