@@ -23,10 +23,11 @@ func main() {
 
 	barHidden := true
 	for {
-		if barHidden && cursorInBar(*barHeight) {
+		inBar := cursorInBar(*barHeight)
+		if barHidden && inBar {
 			barHidden = false
 			showBar()
-		} else if !barHidden && !cursorInBar(*barHeight) {
+		} else if !barHidden && !inBar {
 			barHidden = true
 			hideBar()
 		}
