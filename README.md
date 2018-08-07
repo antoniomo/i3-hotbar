@@ -32,7 +32,7 @@ dep ensure
 go install
 ```
 
-Then on your ``~/.i3/config`:
+Then on your `~/.i3/config`:
 
 ```
 # Hotbar script
