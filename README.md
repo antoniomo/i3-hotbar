@@ -1,5 +1,4 @@
-Hotbar for i3wm
-===============
+# Hotbar for i3wm
 
 Do you use [i3wm](https://i3wm.org) with the bar set on [hide
 mode](https://i3wm.org/docs/userguide.html#_display_mode)? This mode lets you
@@ -13,31 +12,27 @@ key. I know `i3` is all about avoiding mouse usage, but to me this makes it more
 comfortable to use with the hidden bar. If you are here, I hope you find it
 useful as well.
 
+This depends heavily on:
+
+- https://github.com/BurntSushi/xgb
+- https://github.com/BurntSushi/xgbutil
+- https://github.com/go-vgo/robotgo
+
+Some of the code is taken from their docs/examples, and I didn't strip comments
+or anything since, well, they are informative. All credit to their authors.
+
 ## Installation
 
-Two options:
-
-If you aren't a `go` developer or don't want to fiddle with the `C`
-dependencies, just clone this somewhere and add this to your `~/.i3/config`:
+Assuming you have https://github.com/golang/dep installed:
 
 ```
-# Hotbar script
-exec --no-startup-id WHATEVER_PATH/i3-hotbar/bin/i3-hotbar
+go get -u github.com/antoniomo/i3-hotbar
+cd $GOPATH/src/github.com/antoniomo/i3-hotbar
+dep ensure
+go install
 ```
 
-If you prefer a "source" install:
-
-Dependencies:
-
-This depends on `xdolib`. It usually comes bundled with `xdotool`, in your
-distribution packages. Install that first.
-
-After installing the dependencies, do:
-```bash
-$ go get github.com/antoniomo/i3-hotbar
-```
-
-To execute at i3 startup, put this in your `~/.i3/config`:
+Then on your ``~/.i3/config`:
 
 ```
 # Hotbar script
