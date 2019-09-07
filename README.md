@@ -23,13 +23,8 @@ or anything since, well, they are informative. All credit to their authors.
 
 ## Installation
 
-Assuming you have https://github.com/golang/dep installed:
-
 ```
 go get -u github.com/antoniomo/i3-hotbar
-cd $GOPATH/src/github.com/antoniomo/i3-hotbar
-dep ensure
-go install
 ```
 
 Then on your `~/.i3/config`:

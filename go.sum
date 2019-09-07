@@ -1,0 +1,17 @@
+github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802 h1:1BDTz0u9nC3//pOCMdNH+CiXJVYJh5UQNCOBG7jbELc=
+github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
+github.com/BurntSushi/xgbutil v0.0.0-20160919175755-f7c97cef3b4e h1:4ZrkT/RzpnROylmoQL57iVUL57wGKTR5O6KpVnbm2tA=
+github.com/BurntSushi/xgbutil v0.0.0-20160919175755-f7c97cef3b4e/go.mod h1:uw9h2sd4WWHOPdJ13MQpwK5qYWKYDumDqxWWIknEQ+k=
+github.com/StackExchange/wmi v0.0.0-20180116203802-5d049714c4a6/go.mod h1:3eOhrUMpNV+6aFIbp5/iudMxNCF27Vw2OZgy4xEx0Fg=
+github.com/go-ole/go-ole v1.2.1/go.mod h1:7FAglXiTm7HKlQRDeOQ6ZNUHidzCWXuZWq/1dTyBNF8=
+github.com/go-vgo/robotgo v0.0.0-20180427105037-08341cc1aa28 h1:AVJWoCyLaHHyq4WM3YLCMppFefLi4pepRnT5S32tpzs=
+github.com/go-vgo/robotgo v0.0.0-20180427105037-08341cc1aa28/go.mod h1:MSsrT+NghGvjFoAYcGrB+0Z6do58D3fx/7/29mYX8S0=
+github.com/shirou/gopsutil v2.17.13-0.20180801053943-8048a2e9c577+incompatible h1:G5sSEVYPmF5brwNsv/EcbzzlmlQQCf+jvgccZkNgT7c=
+github.com/shirou/gopsutil v2.17.13-0.20180801053943-8048a2e9c577+incompatible/go.mod h1:5b4v6he4MtMOwMlS0TUMTu2PcXUg8+E1lC7eC3UO/RA=
+github.com/shirou/w32 v0.0.0-20160930032740-bb4de0191aa4/go.mod h1:qsXQc7+bwAM3Q1u/4XEfrquwF8Lw7D7y5cD8CuHnfIc=
+github.com/vcaesar/imgo v0.0.0-20180307100924-fece97d8745e h1:kfqvqIIr/UqUhmSF3h3eBHel9543spWoRE2SpTw3tjg=
+github.com/vcaesar/imgo v0.0.0-20180307100924-fece97d8745e/go.mod h1:oOApz3h+7V0sisQixDPGNr2A5byfaZJy8fk8CSObRSQ=
+golang.org/x/image v0.0.0-20180708004352-c73c2afc3b81 h1:00VmoueYNlNz/aHIilyyQz/MHSqGoWJzpFv/HW8xpzI=
+golang.org/x/image v0.0.0-20180708004352-c73c2afc3b81/go.mod h1:ux5Hcp/YLpHSI86hEcLt0YII63i6oz57MZXIpbrjZUs=
+golang.org/x/sys v0.0.0-20180806192500-2be389f392cd h1:KFYUs6SCkSktZ+xJWb5YbuSCJLLphbTsg0kvyirtlQ8=
+golang.org/x/sys v0.0.0-20180806192500-2be389f392cd/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
